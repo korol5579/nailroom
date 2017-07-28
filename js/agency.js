@@ -30,4 +30,13 @@
         }
     })
 
+    $(document).scroll(function(event) {
+        if ($(document).scrollTop() > 100) {
+          $('.navbar-nav').removeClass('navbar-nav-nailroom');
+        } else {
+          $('.navbar-nav').addClass('navbar-nav-nailroom');
+        }
+
+      })
+
 })(jQuery); // End of use strict
