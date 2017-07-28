@@ -232,7 +232,6 @@ header {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  background-size: 600px;
   text-align: center;
   color: #3a3a3a;
 }
@@ -749,6 +748,7 @@ img::-moz-selection {
 body {
   background-image: url('../img/header-bg.png');
   webkit-tap-highlight-color: #be568f;
+  background-size: 600px;
 }
 #bottle {
   transition: transform .5s;
