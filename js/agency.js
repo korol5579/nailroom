@@ -26,15 +26,19 @@
     // Offset for Main Navigation
     $('#mainNav').affix({
         offset: {
-            top: 100
+            top: 280
         }
     })
 
     $(document).scroll(function(event) {
-        if ($(document).scrollTop() > 100) {
+        if ($(document).scrollTop() > 280) {
           $('.navbar-nav').removeClass('navbar-nav-nailroom');
+          $('#mainNav').addClass('navbar-fixed-top');
+          $('#mainNav').addClass('affix-top');
         } else {
           $('.navbar-nav').addClass('navbar-nav-nailroom');
+          $('#mainNav').removeClass('navbar-fixed-top');
+          $('#mainNav').removeClass('affix-top');
         }
 
       })
